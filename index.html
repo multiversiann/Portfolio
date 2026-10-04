@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rashid — Creator & Developer</title>
+  <meta name="description" content="Portfolio of Rashid" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fixed WebGL particle canvas (the portrait that dissolves as you scroll) -->
+  <canvas id="scene"></canvas>
+  <div class="grain"></div>
+
+  <!-- Top nav pill -->
+  <header class="nav">
+    <a href="#hero" class="logo">Rashid<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#numbers">Reach</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+  </header>
+
+  <!-- Scroll progress -->
+  <div class="progress"><i id="bar"></i></div>
+
+  <main>
+    <!-- 1. HERO -->
+    <section id="hero" class="panel hero">
+      <div class="tag reveal">Available for projects — 2026</div>
+      <h1 class="reveal d1">Hi, I'm <em>Rashid</em></h1>
+      <p class="sub reveal d2">Developer, designer & creator building things the internet remembers.</p>
+      <div class="scroll-hint reveal d3"><span></span> Scroll to explore</div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section id="about" class="panel left">
+      <p class="eyebrow reveal">( About )</p>
+      <h2 class="big reveal d1">Creating content<br />that <em>connects.</em></h2>
+      <p class="body reveal d2">I turn ideas into fast, expressive websites and digital products. Clean code, thoughtful motion, and a little obsession with detail.</p>
+    </section>
+
+    <!-- 3. NUMBERS -->
+    <section id="numbers" class="panel left">
+      <p class="eyebrow reveal">( Reach )</p>
+      <h2 class="big reveal d1">Over <em class="count" data-to="1000000">1,000,000</em><br />curious people.</h2>
+      <div class="stats reveal d2">
+        <div><b class="count" data-to="50">50</b><span>Projects shipped</span></div>
+        <div><b class="count" data-to="30">30</b><span>Happy clients</span></div>
+        <div><b class="count" data-to="5">5</b><span>Years building</span></div>
+      </div>
+    </section>
+
+    <!-- 4. WORK -->
+    <section id="work" class="panel work">
+      <p class="eyebrow reveal">( Selected work )</p>
+      <h2 class="big reveal d1">Made by hand,<br />using <em>everything.</em></h2>
+      <div class="cards">
+        <a href="https://github.com/multiversiann/Resume-Generator" class="card reveal">
+          <span class="n">01</span><h3>Project One</h3><p>Resume Generator · HTML, Bootstrap</p><i>↗</i>
+        </a>
+        <a href="https://github.com/multiversiann/Void-Runner" class="card reveal d1">
+          <span class="n">02</span><h3>Project Two</h3><p>Void Runner  · Next.js , JavaScript , CSS</p><i>↗</i>
+        </a>
+        <a href="#" class="card reveal d2">
+          <span class="n">03</span><h3>Project Three</h3><p>Brand site with scroll animation · GSAP</p><i>↗</i>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. SERVICES -->
+    <section id="services" class="panel light">
+      <p class="eyebrow reveal">( Services )</p>
+      <h2 class="big reveal d1">Helping creators<br />grow & <em>monetise.</em></h2>
+      <ul class="list">
+        <li class="reveal"><span>01</span> Website design & development</li>
+        <li class="reveal d1"><span>02</span> Motion, 3D & interactive experiences</li>
+        <li class="reveal d2"><span>03</span> Branding & content strategy</li>
+        <li class="reveal d3"><span>04</span> AI-powered workflows & automation</li>
+      </ul>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section id="contact" class="panel light contact">
+      <p class="eyebrow reveal">( Contact )</p>
+      <h2 class="huge reveal d1">Let's build<br /><em>something.</em></h2>
+      <a class="mail reveal d2" href="mailto:rashid.devx@gmail.com">rashid.devx@gmail.com</a>
+      <div class="socials reveal d3">
+        <a href="https://www.instagram.com/rashid.iox/">Instagram</a><a href="https://www.linkedin.com/in/rashid-devx/">LinkedIn</a><a href="https://github.com/multiversiann">GitHub</a><a href="https://x.com/rashid_devx/">X</a>
+      </div>
+      <footer>© 2026 Rashid. All rights reserved.</footer>
+    </section>
+  </main>
+
+  <!-- Bottom floating pill -->
+  <div class="pill"><span class="dot"></span>Portfolio preview <a href="#contact">Hire me</a></div>
+
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
